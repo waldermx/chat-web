@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Dashboard = ({children}) => {
+const ContainerDashboard = ({children}) => {
   return (
     <div className='Dashboard'>
       {children}
@@ -8,6 +8,6 @@ const Dashboard = ({children}) => {
   )
 }
 
-export default Dashboard
+export default ContainerDashboard
 
 
