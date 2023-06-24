@@ -1,12 +1,14 @@
 import React from 'react'
-import ChatsButton from '../Icons/ChatsButton'
-import NewMessageButton from '../Icons/NewMessageButton'
+import { faUsers, faComments,faPenToSquare } from '@fortawesome/free-solid-svg-icons'
+import IconButton from '../../../Components/IconButtton'
+
 
 const MidDashboard = () => {
     return (
         <div className='MiddleDashboard'>
-            <ChatsButton />
-            <NewMessageButton />
+            <IconButton fontAwesomeIcon={faComments} />
+            <IconButton fontAwesomeIcon={faPenToSquare}/>
+            <IconButton fontAwesomeIcon={faUsers} />
         </div>
     )
 }
