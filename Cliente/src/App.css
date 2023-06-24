@@ -5,8 +5,12 @@
   font-weight: bold;
  }
 :root{
-  --main-border-color: #BDBDBD;
-  --main-icon-color: #FFFFFF
+  --border-color: #BDBDBD;
+  --icon-color: #FFFFFF;
+  --light-primary-color: #B2EBF2;
+  --primary-color: #00BCD4;
+  --bg-color: #009688;
+  --black: #212121;
 }
 #root{
   display: flex;
@@ -17,6 +21,8 @@ body{
   padding: 0px;
   margin: 0px;
   overflow: hidden;
+  background-color: var(--bg-color);
+  
 }
 /* DASHBOARD */
 .Dashboard{
@@ -26,9 +32,8 @@ body{
   width: 60px;
   height: 100vh;
   align-items: center;
-  border: 1px solid var(--main-border-color);
-  border-radius: 10px;
-  background-color: white;
+  border: 1px solid var(--border-color);
+  background-color: var(--primary-color);
 }
 
 /* ICONS */
@@ -40,6 +45,10 @@ body{
 .Icon{
   width: 100%;
   height: 100%;
+  color: var(--light-primary-color)
+}
+.Icon#Emoji{
+  color: var(--border-color)
 }
 
 /* DASHBOARD SECTIONS */
@@ -66,25 +75,26 @@ body{
 
 }
 
-/* Chat section */
+/* ChatBar section */
+
+.Main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .ChatBar{
   width: 100%;
   height: 100px;
-  background-color: white;
-  border-radius: 8px;
-  border: 1px solid var(--main-border-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
   border-left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-
-.ChatImageBg{
-  background-image: url('https://d7hftxdivxxvm.cloudfront.net/?height=767&quality=80&resize_to=fit&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F2RNK1P0BYVrSCZEy_Sd1Ew%252F3417757448_4a6bdf36ce_o.jpg&width=767');
-  
-}
 
 .UserName{
   display: flex;
@@ -102,4 +112,43 @@ body{
 
 .text{
   font-family: 'Roboto-Regular';
+  color: var(--icon-color);
+}
+
+
+/* Chat section */
+
+.MessageSection{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.BottomBar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  background-color: var(--light-primary-color);
+}
+/* TypingBar */
+.TypingContainer{
+  display: flex;
+  height: 60%;
+  width: 80%;
+}
+
+.TypingContainer>input{
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid var(--border-color);
+  font-family: 'Roboto-Regular';
+  font-size: 1.2rem;
+  padding-left: 2rem;
+}
+.TypingContainer>input:focus{
+  outline: var(--black) solid 1px;
 }
