@@ -1,11 +1,12 @@
 import React from 'react'
 import MessagesSection from '../Components/MessagesSection'
-import ChatInfoBar from '../Components/ChatInfoBar'
+import Dashboard from './Dashboard/Dashboard'
+import TypingBar from '../Components/TypingBar'
 
 const Chat = () => {
     return (
-        <div className='Main'>
-            <ChatInfoBar />
+        <div className='ChatContainer'>
+            <Dashboard />
             <MessagesSection />
         </div>
     )

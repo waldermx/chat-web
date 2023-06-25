@@ -1,15 +1,17 @@
 import React from 'react'
 import './App.css'
-import Dashboard from './Layout/Dashboard/Dashboard'
 import Chat from './Layout/Chat'
+import ChatBar from './Components/ChatBar'
+import BottomBar from './Components/BottomBar'
 
 const App = () => {
   return (
-    <>
-      <Dashboard />
-      <Chat/>
+    <div className='App'>
+      <ChatBar />
+      <Chat />
+      <BottomBar/>
 
-    </>
+    </div>
   )
 }
 

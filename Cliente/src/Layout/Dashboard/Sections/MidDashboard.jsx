@@ -6,9 +6,7 @@ import IconButton from '../../../Components/IconButtton'
 const MidDashboard = () => {
     return (
         <div className='MiddleDashboard'>
-            <IconButton fontAwesomeIcon={faComments} />
-            <IconButton fontAwesomeIcon={faPenToSquare}/>
-            <IconButton fontAwesomeIcon={faUsers} />
+            
         </div>
     )
 }

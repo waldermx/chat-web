@@ -1,11 +1,11 @@
 import React from 'react'
-import TypingBar from './BottomBar'
+import BottomBar from './BottomBar'
 
 const MessagesSection = () => {
   return (
     <div className='MessageSection'>
         Hola mundo
-        <TypingBar/>
+        
     </div>
   )
 }
