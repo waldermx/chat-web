@@ -3,10 +3,12 @@ import BottomBar from './BottomBar'
 
 const MessagesSection = () => {
   return (
-    <div className='MessageSection'>
+    <>
+      <div className='MessageSection'>
         Hola mundo
-        
-    </div>
+        <BottomBar />
+      </div>
+    </>
   )
 }
 

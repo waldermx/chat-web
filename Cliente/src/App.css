@@ -8,10 +8,11 @@
 :root {
   --border-color: #BDBDBD;
   --icon-color: #FFFFFF;
-  --light-primary-color: #B2EBF2;
-  --primary-color: #00BCD4;
-  --bg-color: #009688;
+  --light-primary-color: #c7bfff;
+  --primary-color: #6750a4;
+  --auxiliar-color: #7e5260;
   --black: #212121;
+  --bg-color: #e6e1e6;
 }
 html{
   height: 100vh;
@@ -27,7 +28,7 @@ body {
   padding: 0px;
   margin: 0px;
   overflow: hidden;
-  background-color: var(--border-color);
+  background-color: var(--bg-color);
   height: 100%;
   width: 100%;
 }
@@ -45,20 +46,23 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 45px;
-  height: 100vh;
+  height: 100%;
   align-items: center;
   background-color: var(--primary-color);
-  justify-content: space-evenly;
-
+  justify-content: space-between;
+  /* padding-top: 30px; */
+  padding-bottom: 100px;
 }
 
 /* ICONS */
 .DashboardIcon {
   display: flex;
-  width: 100%;
+
   height: 30px;
   justify-content: center;
+  align-items: center;
 }
+
 
 .Icon {
   width: 90%;
@@ -67,7 +71,9 @@ body {
 }
 
 .Icon#Emoji {
-  color: var(--border-color)
+  color: #2d1f7b;
+  height: 21px;
+  width: 21px;
 }
 
 
@@ -121,17 +127,16 @@ body {
 
 .ChatContainer {
   width: 100%;
-  height: 80vh;
+  height: 100%;
   display: flex;
-  flex-direction: row;
 }
-
 .MessageSection {
   display: flex;
   height: 100%;
   width: 100%;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .BottomBar {
@@ -141,6 +146,7 @@ body {
   height: 50px;
   width: 100%;
   background-color: var(--light-primary-color);
+  color: #2d1f7b;
 }
 
 /* TypingBar */
@@ -148,6 +154,7 @@ body {
   display: flex;
   height: 60%;
   width: 80%;
+  align-items: center;
 }
 
 .TypingContainer>input {
@@ -156,9 +163,9 @@ body {
   border: 1px solid var(--border-color);
   font-family: 'Roboto-Regular';
   font-size: 1.2rem;
-  padding-left: 2rem;
+  padding-left: 10px;
 }
 
 .TypingContainer>input:focus {
-  outline: var(--black) solid 1px;
+  outline: none;
 }

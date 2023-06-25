@@ -9,8 +9,6 @@ const App = () => {
     <div className='App'>
       <ChatBar />
       <Chat />
-      <BottomBar/>
-
     </div>
   )
 }
