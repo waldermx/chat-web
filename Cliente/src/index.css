@@ -5,15 +5,6 @@
   font-weight: bold;
 }
 
-:root {
-  --border-color: #BDBDBD;
-  --icon-color: #FFFFFF;
-  --light-primary-color: #c7bfff;
-  --primary-color: #6750a4;
-  --auxiliar-color: #7e5260;
-  --black: #212121;
-  --bg-color: #e6e1e6;
-}
 html{
   height: 100vh;
 }

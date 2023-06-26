@@ -1,3 +1,14 @@
+:root {
+    --border-color: #BDBDBD;
+    --icon-color: #FFFFFF;
+    --light-primary-color: #c7bfff;
+    --primary-container: #EADDFF;
+    --primary-color: #6750a4;
+    --auxiliar-color: #7e5260;
+    --black: #212121;
+    --bg-color: #e6e1e6;
+}
+
 /* DASHBOARD */
 .Dashboard {
     display: flex;
@@ -9,35 +20,61 @@
     background-color: var(--primary-color);
     justify-content: space-around;
     padding-bottom: 100px;
-  }
-  
-  /* ICONS */
-  .DashboardIcon {
+}
+
+/* ICONS */
+.DashboardIcon {
     display: flex;
-    width: 30px;
-    height: 30px;
+    width: 43px;
+    height: 43px;
     justify-content: center;
     align-items: center;
-  }
-  
-  
-  .Icon {
-    width: 90%;
-    height: 90%;
-    color: var(--icon-color)
-  }
-  
-  .Icon#Emoji {
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    transition: background-color .3s;
+}
+
+.DashboardIcon:hover {
+    cursor: pointer;
+    background-color: var(--primary-container);
+    transition: background-color .2s;
+}
+.DashboardIcon:hover .Icon{
+    color: black;
+    transition: color .2s;
+}
+.Icon {
+    width: 27px;
+    height: 27px;
+    color: var(--icon-color);
+    transition: color .3s;
+}
+.EmojiDiv{
+    display: flex;
+    width: 43px;
+    height: 43px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--light-primary-color);
+    transition: background-color .3s;
+}
+.EmojiDiv:hover{
+    cursor: pointer;
+    background-color: var(--primary-container);
+    transition: background-color .2s;
+}
+#Emoji {
     color: #2d1f7b;
     height: 21px;
     width: 21px;
-  }
-  
-  
-  /* ChatBar section */
-  
-  
-  .ChatBar {
+}
+
+
+/* ChatBar section */
+
+
+.ChatBar {
     width: 100%;
     height: 80px;
     background-color: var(--primary-color);
@@ -45,63 +82,67 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-  }
-  .MenuContainer{
+}
+
+.MenuContainer {
     display: flex;
     height: 100%;
     width: 45px;
     align-items: center;
     justify-content: center;
-  }
-  .ToggleButton {
+}
+
+.ToggleButton {
     display: flex;
     width: 45px;
     justify-content: center;
     align-items: center;
-  
-  }
-  .InfoBar{
+
+}
+
+.InfoBar {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     width: 100%;
-  }
-  
-  .UserName {
+}
+
+.UserName {
     display: flex;
     align-items: center;
     height: 100%;
     width: 300px;
     justify-content: space-around;
-  }
-  
-  .userImage {
+}
+
+.userImage {
     border-radius: 100%;
     width: 60px;
     height: 60px;
-  }
-  
-  .text {
+}
+
+.text {
     font-family: 'Roboto-Regular';
     color: var(--icon-color);
-  }
-  
-  /* Chat section */
-  
-  .ChatContainer {
+}
+
+/* Chat section */
+
+.ChatContainer {
     width: 100%;
     height: 100%;
     display: flex;
-  }
-  .MessageSection {
+}
+
+.MessageSection {
     display: flex;
     height: 100%;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
-  }
-  
-  .BottomBar {
+}
+
+.BottomBar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,25 +150,16 @@
     width: 100%;
     background-color: var(--light-primary-color);
     color: #2d1f7b;
-  }
-  
-  /* TypingBar */
-  .TypingContainer {
+}
+
+/* TypingBar */
+.TypingContainer {
     display: flex;
     height: 60%;
     width: 80%;
     align-items: center;
-  }
-  
-  .TypingContainer>input {
-    width: 100%;
-    border-radius: 30px;
-    border: 1px solid var(--border-color);
-    font-family: 'Roboto-Regular';
-    font-size: 1.2rem;
-    padding-left: 10px;
-  }
-  
-  .TypingContainer>input:focus {
+}
+
+.TypingContainer>input:focus {
     outline: none;
-  }
+}

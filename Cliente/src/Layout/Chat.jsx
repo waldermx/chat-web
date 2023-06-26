@@ -1,7 +1,7 @@
 import React from 'react'
 import MessagesSection from '../Components/MessagesSection'
 import Dashboard from './Dashboard/Dashboard'
-import TypingBar from '../Components/TypingBar'
+import TypingBar from '../Components/BottomBar'
 
 const Chat = () => {
     return (

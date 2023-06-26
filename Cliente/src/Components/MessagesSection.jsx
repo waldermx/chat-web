@@ -1,5 +1,5 @@
 import React from 'react'
-import BottomBar from './BottomBar'
+import BottomBar from './BottomBarAndConfig'
 
 const MessagesSection = () => {
   return (
