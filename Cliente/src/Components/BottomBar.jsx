@@ -1,10 +1,19 @@
 import React from 'react'
 import TypingBar from './TypingBar'
+import IconButton from './IconButtton'
+import { faGear } from '@fortawesome/free-solid-svg-icons'
 
 const BottomBar = () => {
   return (
-    <div className='BottomBar'>
-        <TypingBar/>
+    <div style={{ display: 'flex', alignItems: 'center' }}>
+      <div className='MenuContainer'>
+        <div className='ToggleButton'>
+          <IconButton fontAwesomeIcon={faGear} />
+        </div>
+      </div>
+      <div className='BottomBar'>
+        <TypingBar />
+      </div>
     </div>
   )
 }

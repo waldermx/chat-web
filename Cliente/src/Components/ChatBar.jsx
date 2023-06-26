@@ -10,9 +10,11 @@ const ChatBar = () => {
                     <ToggleButton id="ToggleButton" />
                 </div>
             </div>
-            <div className='UserName'>
-                <img src={Pic} className="userImage" alt="Profile picture" />
-                <h2 className='text'>Nombre del usuario</h2>
+            <div className='InfoBar'>
+                <div className='UserName'>
+                    <img src={Pic} className="userImage" alt="Profile picture" />
+                    <h2 className='text'>Nombre del usuario</h2>
+                </div>
             </div>
         </div>
     )

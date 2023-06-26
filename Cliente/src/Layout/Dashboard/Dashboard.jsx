@@ -10,7 +10,6 @@ const Dashboard = () => {
             <IconButton fontAwesomeIcon={faComments} />
             <IconButton fontAwesomeIcon={faPenToSquare}/>
             <IconButton fontAwesomeIcon={faUsers} />
-            <IconButton fontAwesomeIcon={faGear}/>
         </ContainerDashboard>
     )
 }

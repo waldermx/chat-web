@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: local("Roboto-Regular"),
+    url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: bold;
+}
+
+:root {
+  --border-color: #BDBDBD;
+  --icon-color: #FFFFFF;
+  --light-primary-color: #c7bfff;
+  --primary-color: #6750a4;
+  --auxiliar-color: #7e5260;
+  --black: #212121;
+  --bg-color: #e6e1e6;
+}
+html{
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}

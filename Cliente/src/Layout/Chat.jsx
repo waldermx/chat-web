@@ -7,7 +7,6 @@ const Chat = () => {
     return (
         <div className='ChatContainer'>
             <Dashboard />
-            <MessagesSection />
         </div>
     )
 }

@@ -6,7 +6,6 @@ const MessagesSection = () => {
     <>
       <div className='MessageSection'>
         Hola mundo
-        <BottomBar />
       </div>
     </>
   )
