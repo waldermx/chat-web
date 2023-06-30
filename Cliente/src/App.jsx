@@ -3,8 +3,8 @@ import './App.css'
 import Chat from './Layout/Chat'
 import ChatBar from './Components/ChatBar'
 import BottomBar from './Layout/BottomBarAndConfig'
-import io from 'socket.io-client'
-import { PORT } from '../../Server/config'
+// import io from 'socket.io-client'
+// import { PORT } from '../../Server/config'
 
 // const socket = io(`http://localhost:${PORT}`)
 
