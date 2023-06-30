@@ -1,6 +1,6 @@
 import React from 'react'
-import TypingBar from './BottomBar'
-import IconButton from './IconButtton'
+import TypingBar from '../Components/BottomBar'
+import IconButton from '../Components/IconButtton'
 import { faGear } from '@fortawesome/free-solid-svg-icons'
 
 const BottomBar = () => {
