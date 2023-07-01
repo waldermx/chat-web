@@ -3,6 +3,7 @@ import './App.css'
 import Chat from './Layout/Chat'
 import BottomBar from './Layout/BottomBarAndConfig'
 import TopBar from './Components/TopBar'
+import FlexDirectionColumn from './Components/Containers/FlexDirectionColumn'
 // import io from 'socket.io-client'
 // import { PORT } from '../../Server/config'
 
@@ -10,11 +11,11 @@ import TopBar from './Components/TopBar'
 
 const App = () => {
   return (
-    <div className='App'>
+    <FlexDirectionColumn style={{ width: '100%' }}>
       <TopBar />
       <Chat />
       <BottomBar />
-    </div>
+    </FlexDirectionColumn>
   )
 }
 

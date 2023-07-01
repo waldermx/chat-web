@@ -1,7 +1,7 @@
 import React from 'react'
 import { faPenToSquare, faComments, faUsers } from '@fortawesome/free-solid-svg-icons'
 import IconButton from '../../Components/IconButtton'
-import FlexDirectionColumn from '../../Components/FlexDivs/FlexDirectionColumn'
+import FlexDirectionColumn from '../../Components/Containers/FlexDirectionColumn'
 
 
 const Dashboard = () => {

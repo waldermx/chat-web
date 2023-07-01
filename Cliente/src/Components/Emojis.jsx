@@ -1,7 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIcons } from '@fortawesome/free-solid-svg-icons'
-import FlexDirectionRow from './FlexDivs/FlexDirectionRow'
+import FlexDirectionRow from './Containers/FlexDirectionRow'
 
 const Emojis = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import FlexDirectionRow from './FlexDivs/FlexDirectionRow'
+import FlexDirectionRow from './Containers/FlexDirectionRow'
 
 const IconButton = ({ fontAwesomeIcon, ...resto }) => {
     return (

@@ -1,13 +1,19 @@
 import React from 'react'
 import Dashboard from './Dashboard/Dashboard'
 import DisplayChatField from './DisplayChatField'
+import FlexDirectionRow from '../Components/Containers/FlexDirectionRow'
 
 const Chat = () => {
     return (
-        <div className='ChatContainer'>
+        <FlexDirectionRow style={{
+            width: '100%',
+            height: '100%',
+            display: 'flex'
+        }}>
             <Dashboard />
-            <DisplayChatField/>
-        </div>
+            <DisplayChatField />
+        </FlexDirectionRow>
+
     )
 }
 

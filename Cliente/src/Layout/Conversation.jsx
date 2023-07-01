@@ -1,8 +1,11 @@
 import React from 'react'
+import FlexDirectionColumn from '../Components/Containers/FlexDirectionColumn'
 
 const Conversation = () => {
   return (
-    <div>Conversation</div>
+    <FlexDirectionColumn>
+      Hello
+    </FlexDirectionColumn>
   )
 }
 

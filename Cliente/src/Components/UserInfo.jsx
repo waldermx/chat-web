@@ -1,5 +1,5 @@
 import React from 'react'
-import FlexDirectionRow from './FlexDivs/FlexDirectionRow'
+import FlexDirectionRow from './Containers/FlexDirectionRow'
 import UserImage from './UserImage'
 import RobotoText from './RobotoText'
 

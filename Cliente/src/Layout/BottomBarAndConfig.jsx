@@ -1,28 +1,24 @@
 import React from 'react'
-import TypingBar from '../Components/BottomBar'
+import TypingBar from '../Components/TypingBar'
 import IconButton from '../Components/IconButtton'
 import { faGear } from '@fortawesome/free-solid-svg-icons'
-import FlexDirectionRow from '../Components/FlexDivs/FlexDirectionRow'
+import FlexDirectionRow from '../Components/Containers/FlexDirectionRow'
+import FaButton from '../Components/FaButton'
 
 const BottomBar = () => {
   return (
-    <div style={{ display: 'flex', alignItems: 'center' }}>
-      <div className='MenuContainer'>
-        <div className='ToggleButton'>
-          <IconButton fontAwesomeIcon={faGear} />
-        </div>
-      </div>
+    <FlexDirectionRow style={{ alignItems: 'center' }}>
       <FlexDirectionRow style={{
+        height: '100%',
+        width: '45px',
         alignItems: 'center',
-        justifyContent: 'center',
-        height: '50px',
-        width: '100%',
-        backgroundColor: 'var(--light-primary-color)',
-        color: '#2d1f7b'
+        justifyContent: 'center'
       }}>
-        <TypingBar />
+        <FaButton icon={faGear} />
       </FlexDirectionRow>
-    </div>
+
+      <TypingBar />
+    </FlexDirectionRow>
   )
 }
 

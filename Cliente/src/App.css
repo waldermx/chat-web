@@ -33,24 +33,6 @@
 }
 
 
-
-
-.MenuContainer {
-    display: flex;
-    height: 100%;
-    width: 45px;
-    align-items: center;
-    justify-content: center;
-}
-
-.ToggleButton {
-    display: flex;
-    width: 45px;
-    justify-content: center;
-    align-items: center;
-
-}
-
 .userImage {
     border-radius: 100%;
     width: 60px;
@@ -62,26 +44,6 @@
     color: var(--icon-color);
 }
 
-/* Chat section */
-
-.ChatContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-
-
-
-
-/* TypingBar */
-.TypingContainer {
-    display: flex;
-    height: 60%;
-    width: 80%;
-    align-items: center;
-}
-
-.TypingContainer>input:focus {
+.InputField:focus {
     outline: none;
 }

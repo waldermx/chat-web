@@ -1,8 +1,11 @@
 import React from 'react'
+import FlexDirectionColumn from '../Components/Containers/FlexDirectionColumn'
 
 const OnButtonClickBar = () => {
   return (
-    <div>OnButtonClickBar</div>
+    <FlexDirectionColumn>
+      Hidden Bar
+    </FlexDirectionColumn>
   )
 }
 

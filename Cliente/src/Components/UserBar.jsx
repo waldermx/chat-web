@@ -1,5 +1,5 @@
 import React from 'react'
-import FlexDirectionRow from './FlexDivs/FlexDirectionRow'
+import FlexDirectionRow from './Containers/FlexDirectionRow'
 import UserInfo from './UserInfo'
 
 const UserBar = () => {

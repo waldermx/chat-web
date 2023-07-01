@@ -1,12 +1,13 @@
 import React from 'react'
 import UserInfo from './UserInfo'
-import MenuButton from './MenuButton'
-import FlexDirectionRow from './FlexDivs/FlexDirectionRow'
+import FaButton from './FaButton'
+import FlexDirectionRow from './Containers/FlexDirectionRow'
 import usrImg from '../assets/profilePicDefault.webp'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 //Cambiar username e img por contexto
 
-const TopBar = ({userName}) => {
+const TopBar = ({ userName }) => {
     return (
         <FlexDirectionRow style={{
             width: ' 100%',
@@ -16,8 +17,8 @@ const TopBar = ({userName}) => {
             alignItems: 'center',
             justifyContent: 'flex-start'
         }}>
-            <MenuButton />
-            <UserInfo srcImg={usrImg} userName={userName??"Nombre de Usuario"}/>
+            <FaButton icon={faBars} />
+            <UserInfo srcImg={usrImg} userName={userName ?? "Nombre de Usuario"} />
         </FlexDirectionRow >
     )
 }
