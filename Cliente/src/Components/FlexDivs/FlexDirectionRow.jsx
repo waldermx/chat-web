@@ -1,8 +1,8 @@
 import React from 'react'
 
-const FlexDirectionRow = ({children, style}) => {
+const FlexDirectionRow = ({children, style, ...rest}) => {
   return (
-    <div style={{display: 'flex', flexDirection: 'row', ...style}} >
+    <div style={{display: 'flex', flexDirection: 'row', ...style}} {...rest} >
         {children}
     </div>
   )

@@ -10,26 +10,14 @@
 }
 
 
-/* ICONS */
-.DashboardIcon {
-    display: flex;
-    width: 43px;
-    height: 43px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: var(--primary-color);
-    transition: background-color .3s;
-}
-
 .DashboardIcon:hover {
-    cursor: pointer;
-    background-color: var(--primary-container);
-    transition: background-color .2s;
+    cursor: pointer!important;
+    background-color: var(--primary-container)!important;
+    transition: background-color .2s!important;
 }
 .DashboardIcon:hover .Icon{
-    color: black;
-    transition: color .2s;
+    color: black!important;
+    transition: color .2s!important;
 }
 .Icon {
     width: 27px;
@@ -37,40 +25,15 @@
     color: var(--icon-color);
     transition: color .3s;
 }
-.EmojiDiv{
-    display: flex;
-    width: 43px;
-    height: 43px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background-color: var(--light-primary-color);
-    transition: background-color .3s;
-}
-.EmojiDiv:hover{
+
+.Emojis:hover{
     cursor: pointer;
-    background-color: var(--primary-container);
-    transition: background-color .2s;
-}
-#Emoji {
-    color: #2d1f7b;
-    height: 21px;
-    width: 21px;
+    background-color: var(--primary-container)!important;
+    transition: background-color .2s!important;
 }
 
 
-/* ChatBar section */
 
-
-.ChatBar {
-    width: 100%;
-    height: 80px;
-    background-color: var(--primary-color);
-    border-left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 
 .MenuContainer {
     display: flex;
@@ -86,20 +49,6 @@
     justify-content: center;
     align-items: center;
 
-}
-
-.InfoBar {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-.UserName {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 300px;
-    justify-content: space-around;
 }
 
 .userImage {
@@ -123,15 +72,7 @@
 
 
 
-.BottomBar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 100%;
-    background-color: var(--light-primary-color);
-    color: #2d1f7b;
-}
+
 
 /* TypingBar */
 .TypingContainer {

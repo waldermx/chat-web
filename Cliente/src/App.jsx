@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css'
 import Chat from './Layout/Chat'
-import ChatBar from './Components/ChatBar'
 import BottomBar from './Layout/BottomBarAndConfig'
+import TopBar from './Components/TopBar'
 // import io from 'socket.io-client'
 // import { PORT } from '../../Server/config'
 
@@ -11,7 +11,7 @@ import BottomBar from './Layout/BottomBarAndConfig'
 const App = () => {
   return (
     <div className='App'>
-      <ChatBar />
+      <TopBar />
       <Chat />
       <BottomBar />
     </div>
