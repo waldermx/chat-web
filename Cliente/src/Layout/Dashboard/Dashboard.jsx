@@ -12,7 +12,8 @@ const Dashboard = () => {
             alignItems: 'center',
             backgroundColor: 'var(--primary-color)',
             justifyContent: 'space-around',
-            paddingBottom: '100px'
+            paddingBottom: '100px',
+            position: "fixed"
         }
         }>
             <IconButton fontAwesomeIcon={faComments} />

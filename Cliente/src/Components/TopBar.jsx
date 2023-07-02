@@ -15,7 +15,8 @@ const TopBar = ({ userName }) => {
             backgroundColor: 'var(--primary-color)',
             borderLeft: 0,
             alignItems: 'center',
-            justifyContent: 'flex-start'
+            justifyContent: 'flex-start',
+            position: "fixed"
         }}>
             <FaButton icon={faBars} />
             <UserInfo srcImg={usrImg} userName={userName ?? "Nombre de Usuario"} />
