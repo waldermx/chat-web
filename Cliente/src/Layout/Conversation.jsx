@@ -4,16 +4,31 @@ import MessagesMapped from '../Components/MessagesMapped';
 
 
 const conversation = [
-  '¡Hola! ¿Cómo estás?',
-  '¡Hola John! Estoy bien, ¿y tú?',
-  'Me alegro de que estés bien. ¿Qué has estado haciendo últimamente?',
-  'He estado trabajando en un nuevo proyecto. Es emocionante.',
-  'Eso suena genial. Si necesitas ayuda, no dudes en pedirla.',
+  {
+    userID: 0,
+    message: '¡Hola! ¿Cómo estás?',
+  },
+  {
+    userID: 1,
+    message: '¡Hola John! Estoy bien, ¿y tú?',
+  },
+  {
+    userID: 0,
+    message: 'Me alegro de que estés bien. ¿Qué has estado haciendo últimamente?',
+  },
+  {
+    userID: 1,
+    message: 'He estado trabajando en un nuevo proyecto. Es emocionante.',
+  },
+  {
+    userID: 0,
+    message: 'Eso suena genial. Si necesitas ayuda, no dudes en pedirla.',
+  },
 ];
 
 const Conversation = () => {
   return (
-    <FlexDirectionColumn reverse style={{ width: '100%' }}>
+    <FlexDirectionColumn  style={{ width: '100%' }}>
       <MessagesMapped messages={conversation} />
     </FlexDirectionColumn>
   )
