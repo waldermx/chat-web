@@ -8,10 +8,7 @@ import { socket } from '../Layout/Conversation'
 
 
 const TypingBar = () => {
-
-  // const { message, setMessage } = useContext(messageContext)
-  const { addMessage } = useContext(ConversationContext)
-
+  
   const [text, setText] = useState("")
 
 
