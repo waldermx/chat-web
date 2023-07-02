@@ -6,7 +6,6 @@ const Message = ({ text, id }) => {
 
     const isMyMessage = (id === 0)
 
-    console.log(id)
 
     if (!isMyMessage) {
         return (

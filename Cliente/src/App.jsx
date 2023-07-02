@@ -11,11 +11,11 @@ import FlexDirectionColumn from './Components/Containers/FlexDirectionColumn'
 
 const App = () => {
   return (
-    <FlexDirectionColumn style={{ width: '100%' }}>
+    <>
       <TopBar />
       <Chat />
       <BottomBar />
-    </FlexDirectionColumn>
+    </>
   )
 }
 

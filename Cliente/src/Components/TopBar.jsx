@@ -10,15 +10,22 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const TopBar = ({ userName }) => {
     return (
         <FlexDirectionRow style={{
-            width: ' 100%',
-            height: '80px',
+            width: '100%',
+            // height: '80px',
             backgroundColor: 'var(--primary-color)',
-            borderLeft: 0,
             alignItems: 'center',
-            justifyContent: 'flex-start',
             position: "fixed"
         }}>
-            <FaButton icon={faBars} />
+
+            <FlexDirectionRow style={{
+                height: '100%',
+                width: '45px',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }}>
+                <FaButton icon={faBars} />
+
+            </FlexDirectionRow>
             <UserInfo srcImg={usrImg} userName={userName ?? "Nombre de Usuario"} />
         </FlexDirectionRow >
     )

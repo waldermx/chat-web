@@ -13,7 +13,8 @@ const Dashboard = () => {
             backgroundColor: 'var(--primary-color)',
             justifyContent: 'space-around',
             paddingBottom: '100px',
-            position: "fixed"
+            position: "fixed",
+            zIndex: -1
         }
         }>
             <IconButton fontAwesomeIcon={faComments} />

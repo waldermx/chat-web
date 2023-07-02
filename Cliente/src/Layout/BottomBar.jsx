@@ -7,7 +7,12 @@ import FaButton from '../Components/FaButton'
 
 const BottomBar = () => {
   return (
-    <FlexDirectionRow style={{ alignItems: 'center', position: "fixed", bottom: 0 }}>
+    <FlexDirectionRow style={{
+      alignItems: 'center',
+      position: "fixed",
+      bottom: 0,
+      width: '100%'
+    }}>
       <FlexDirectionRow style={{
         height: '100%',
         width: '45px',
