@@ -2,7 +2,7 @@ import React from 'react'
 
 const InputField = () => {
     return (
-        <input type="text" style={style} />
+        <input type="text" style={style} className='InputField'/>
     )
 }
 
