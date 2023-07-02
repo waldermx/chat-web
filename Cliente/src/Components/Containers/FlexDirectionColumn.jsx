@@ -1,8 +1,9 @@
 import React from 'react'
 
-const FlexDirectionColumn = ({children, style} ) => {
+const FlexDirectionColumn = ({children, style, reverse} ) => {
+  const direction = reverse ? 'column-reverse' : 'column'
   return (
-    <div style={{display: 'flex', flexDirection: 'column', ...style}} >
+    <div style={{display: 'flex', flexDirection: direction, ...style}} >
         {children}
     </div>
   )

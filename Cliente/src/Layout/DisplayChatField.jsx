@@ -1,13 +1,12 @@
 import React from 'react'
-import OnButtonClickBar from './OnButtonClickBar'
 import Conversation from './Conversation'
+import FlexDirectionRow from '../Components/Containers/FlexDirectionRow'
 
 const DisplayChatField = () => {
   return (
-    <div>
-        <OnButtonClickBar/>
+    <FlexDirectionRow style={{flexGrow: 2, padding:10}}>
         <Conversation/>
-    </div>
+    </FlexDirectionRow>
   )
 }
 

@@ -8,7 +8,6 @@ const Chat = () => {
         <FlexDirectionRow style={{
             width: '100%',
             height: '100%',
-            display: 'flex'
         }}>
             <Dashboard />
             <DisplayChatField />
