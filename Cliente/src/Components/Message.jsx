@@ -10,7 +10,7 @@ const Message = ({ text, id }) => {
 
     if (!isMyMessage) {
         return (
-            <FlexDirectionRow style={{ marginTop: 3 }}>
+            <FlexDirectionRow style={{ marginTop: 3, width: '90%' }}>
                 <MessageGlobo>
                     {text}
                 </MessageGlobo>
@@ -19,8 +19,8 @@ const Message = ({ text, id }) => {
     }
     if (isMyMessage){
         return (
-            <FlexDirectionRow style={{ marginTop: 3, justifyContent: 'flex-end' }}>
-                <MessageGlobo>
+            <FlexDirectionRow style={{ marginTop: 3, width: '90%', justifyContent: 'flex-end', alignSelf: 'flex-end' }}>
+                <MessageGlobo isMyMessage>
                     {text}
                 </MessageGlobo>
             </FlexDirectionRow>
