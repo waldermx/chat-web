@@ -18,9 +18,20 @@ const io = new SocketServer(server, {
 app.use(cors())
 app.use(morgan("dev"));
 
-io.on('connection',()=>{
-    console.log('a user connected')
+io.on('connection', (socket) => {
+    console.log('a user connected');
+
+    socket.on('message', (message => {
+        console.log(message)
+        io.emit('message', message); // Envía el mensaje a todos los clientes conectados
+
+    }))
+    socket.on('disconnect', () => {
+        console.log('A user disconnected');
+      });
 })
+
+
 
 server.listen(PORT, () => {
     console.log(`Server listening on the ${PORT} port`)

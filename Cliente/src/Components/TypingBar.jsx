@@ -3,9 +3,8 @@ import Emojis from './Emojis'
 import InputField from './InputField'
 import Submit from './Submit'
 import TypingContainer from './Containers/TypingContainer'
-import { messageContext } from '../Context/MessageContext'
 import { ConversationContext } from '../Context/ConversationContext'
-
+import { socket } from '../Layout/Conversation'
 
 
 const TypingBar = () => {
@@ -18,11 +17,13 @@ const TypingBar = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    addMessage({
+    const message = {
       userID: 0,
       message: text
-    })
+    }
+    // addMessage(message)
     setText("")
+    socket.emit('message',message)
   }
 
   const handleChange = (e) => {
