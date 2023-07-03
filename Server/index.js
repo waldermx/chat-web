@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new SocketServer(server, {
     cors: {
-        origin: 'http://localhost:5173'
+        origin: '*',
     }
 });
 
@@ -20,6 +20,7 @@ app.use(morgan("dev"));
 
 io.on('connection', (socket) => {
     console.log('a user connected');
+    io.to(socket.id).emit('clientID', socket.id)
 
     socket.on('message', (message => {
         console.log(message)

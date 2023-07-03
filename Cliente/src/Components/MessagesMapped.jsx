@@ -6,7 +6,7 @@ const MessagesMapped = ({ messages }) => {
     return (
         <FlexDirectionColumn style={{width: '100%'}}>
             {messages.map((messageContent) => {
-                return <Message text={messageContent['message']} key={messageContent['message']} id={messageContent['userID']} /> //Cambiar por id
+                return <Message text={messageContent['message']} key={messageContent['message']} id={messageContent['userID']} /> 
             })}
         </FlexDirectionColumn>
 

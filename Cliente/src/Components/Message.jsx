@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import MessageGlobo from './MessageGlobo'
 import FlexDirectionRow from './Containers/FlexDirectionRow'
+import { ConversationContext } from '../Context/ConversationContext'
 
 const Message = ({ text, id }) => {
 
-    const isMyMessage = (id === 0)
+    const {clientID} = useContext(ConversationContext)
+
+    const isMyMessage = (id === clientID)
 
 
     if (!isMyMessage) {

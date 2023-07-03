@@ -4,21 +4,21 @@ import InputField from './InputField'
 import Submit from './Submit'
 import TypingContainer from './Containers/TypingContainer'
 import { ConversationContext } from '../Context/ConversationContext'
-import { socket } from '../Layout/Conversation'
 
 
 const TypingBar = () => {
   
   const [text, setText] = useState("")
 
+  const {socket, clientID} = useContext(ConversationContext)
 
   const handleSubmit = (e) => {
     e.preventDefault()
     const message = {
-      userID: 0,
+      userID: clientID,
       message: text
     }
-    // addMessage(message)
+
     setText("")
     socket.emit('message',message)
   }
