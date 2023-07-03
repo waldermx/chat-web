@@ -6,7 +6,7 @@ import FaButtonsIcon from '../Layout/Dashboard/Icons/FaButtonsIcon';
 //     console.log("You Clicked the Menu");
 // }
 
-const FaButton = ({icon}) => {
+const FaButton = ({ icon }) => {
     return (
         <FlexDirectionRow style={{
             display: 'flex',
@@ -21,3 +21,18 @@ const FaButton = ({icon}) => {
 }
 
 export default FaButton
+
+export const FaSubmit = ({icon}) => {
+    return (
+        <button type='submit' style={{
+            display: 'flex',
+            height: '100%',
+            width: '45px',
+            alignItems: 'center',
+            justifyContent: 'center'
+        }}>
+            <FaButtonsIcon icon={icon} />
+        </button >
+    )
+}
+

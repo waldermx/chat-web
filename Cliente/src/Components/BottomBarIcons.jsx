@@ -1,9 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIcons } from '@fortawesome/free-solid-svg-icons'
 import FlexDirectionRow from './Containers/FlexDirectionRow'
 
-const Emojis = () => {
+const BottomBarIcons = ({icon}) => {
     return (
         <FlexDirectionRow className="Emojis" style={{
             width: '43px',
@@ -14,7 +13,7 @@ const Emojis = () => {
             backgroundColor: 'var(--light-primary-color)',
             transition: 'background-color 0.3s'
         }}>
-            <FontAwesomeIcon icon={faIcons} size="2xl" className='Icon' id="Emoji"
+            <FontAwesomeIcon icon={icon} size="2xl" className='Icon' id="Emoji"
                 style={{
                     color: '#2d1f7b',
                     height: '21px',
@@ -24,4 +23,4 @@ const Emojis = () => {
     )
 }
 
-export default Emojis
+export default BottomBarIcons

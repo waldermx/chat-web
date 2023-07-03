@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
-import Emojis from './Emojis'
+import BottomBarIcons from './BottomBarIcons'
 import InputField from './InputField'
 import Submit from './Submit'
 import TypingContainer from './Containers/TypingContainer'
 import { ConversationContext } from '../Context/ConversationContext'
+import { faIcons } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const TypingBar = () => {
@@ -29,7 +31,7 @@ const TypingBar = () => {
 
   return (
     <TypingContainer onSubmit={handleSubmit}>
-      <Emojis />
+      <BottomBarIcons icon={faIcons} />
       <InputField onChange={handleChange} value={text} />
       <Submit />
     </TypingContainer>
