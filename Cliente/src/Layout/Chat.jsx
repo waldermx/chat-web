@@ -3,6 +3,7 @@ import Dashboard from './Dashboard/Dashboard'
 import DisplayChatField from './DisplayChatField'
 
 const Chat = () => {
+    
     return (
         <>
             <Dashboard />

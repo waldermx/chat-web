@@ -1,29 +1,40 @@
-import React from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Emojis from './Emojis'
 import InputField from './InputField'
-import FlexDirectionRow from './Containers/FlexDirectionRow'
+import Submit from './Submit'
+import TypingContainer from './Containers/TypingContainer'
+import { ConversationContext } from '../Context/ConversationContext'
+
 
 const TypingBar = () => {
+  
+  const [text, setText] = useState("")
+
+  const {socket, clientID} = useContext(ConversationContext)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const message = {
+      userID: clientID,
+      message: text
+    }
+
+    setText("")
+    socket.emit('message',message)
+  }
+
+  const handleChange = (e) => {
+    setText(e.target.value)
+  }
+
   return (
-    <FlexDirectionRow style={{
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '50px',
-      width: '100%',
-      backgroundColor: 'var(--light-primary-color)',
-      color: '#2d1f7b'
-    }}>
-      <FlexDirectionRow style={{
-        display: 'flex',
-        height: '60%',
-        width: '80%',
-        alignItems: 'center'
-      }}>
-        <Emojis />
-        <InputField />
-      </FlexDirectionRow>
-    </FlexDirectionRow>
+    <TypingContainer onSubmit={handleSubmit}>
+      <Emojis />
+      <InputField onChange={handleChange} value={text} />
+      <Submit />
+    </TypingContainer>
   )
 }
 
 export default TypingBar
+

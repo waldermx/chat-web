@@ -21,7 +21,7 @@ const BottomBar = () => {
       }}>
         <FaButton icon={faGear} />
       </FlexDirectionRow>
-
+      
       <TypingBar />
     </FlexDirectionRow>
   )

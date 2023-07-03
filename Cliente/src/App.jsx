@@ -3,19 +3,15 @@ import './App.css'
 import Chat from './Layout/Chat'
 import BottomBar from './Layout/BottomBar'
 import TopBar from './Components/TopBar'
-import FlexDirectionColumn from './Components/Containers/FlexDirectionColumn'
-// import io from 'socket.io-client'
-// import { PORT } from '../../Server/config'
-
-// const socket = io(`http://localhost:${PORT}`)
+import { ConversationProvider } from './Context/ConversationContext'
 
 const App = () => {
   return (
-    <>
-      <TopBar />
-      <Chat />
-      <BottomBar />
-    </>
+    <ConversationProvider>
+        <TopBar />
+        <Chat />
+        <BottomBar />
+    </ConversationProvider>
   )
 }
 

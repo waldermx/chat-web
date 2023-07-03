@@ -1,8 +1,8 @@
 import React from 'react'
 
-const InputField = () => {
+const InputField = ({ ...props }) => {
     return (
-        <input type="text" style={style} className='InputField'/>
+        <input type="text" style={style} className='InputField' {...props} />
     )
 }
 
